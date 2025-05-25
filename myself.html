@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nature Essay</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(to bottom right, #b2fab4, #e0f7fa);">
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Main Container -->
+  <div style="max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.2);">
+
+    <!-- Nature Image -->
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
+         alt="Nature"
+         style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+
+    <!-- Heading and Quote -->
+    <h1 style="text-align: center; color: #2e7d32; font-size: 32px; margin-bottom: 10px;">Nature: The Heart of Life</h1>
+    <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 20px;">"Look deep into nature, and then you will understand everything better." – Albert Einstein</p>
+
+    <!-- Essay Text -->
+    <div id="essayText" style="font-size: 18px; text-align: justify; line-height: 1.7;">
+      <p>
+        <span style="color: #1b5e20; font-weight: bold;">Nature</span> is the most beautiful and precious gift of God to humanity. It includes everything around us—trees, rivers, air, animals, and the sky. It is both a provider and protector. From giving us <span style="color: #00796b;">oxygen</span> to breathe, to <span style="color: #00796b;">water</span> to drink, and <span style="color: #00796b;">food</span> to eat, nature plays a vital role in our daily life.<br><br>
+
+        Nature also inspires peace and creativity. A walk in a green forest or sitting near a calm river can refresh our mind and soul. Every element of nature has its unique charm. The sound of birds, the smell of fresh flowers, the rustling of leaves—they all create harmony.<br><br>
+
+        But sadly, human activities like <span style="color: red;">pollution</span>, <span style="color: red;">deforestation</span>, and <span style="color: red;">climate change</span> are harming nature. If we don't act now, we may lose this gift forever.<br><br>
+
+        We must take action to protect our environment. Plant trees, save water, use eco-friendly products, and educate others about sustainability. Nature does not need us, but we definitely need nature!
+      </p>
+    </div>
+
+    <!-- Table -->
+    <h2 style="color: #388e3c; margin-top: 30px;">🌿 Nature’s Importance & Our Duties</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+      <tr style="background-color: #a5d6a7;">
+        <th style="border: 2px solid #4CAF50; padding: 12px; font-size: 18px;">Nature’s Gift</th>
+        <th style="border: 2px solid #4CAF50; padding: 12px; font-size: 18px;">Our Responsibility</th>
+      </tr>
+      <tr style="background-color: #e8f5e9;" onmouseover="this.style.backgroundColor='#c8e6c9'" onmouseout="this.style.backgroundColor='#e8f5e9'">
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Trees and Forests</td>
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Plant more trees</td>
+      </tr>
+      <tr style="background-color: #f1f8e9;" onmouseover="this.style.backgroundColor='#dcedc8'" onmouseout="this.style.backgroundColor='#f1f8e9'">
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Clean Water</td>
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Avoid polluting rivers</td>
+      </tr>
+      <tr style="background-color: #e8f5e9;" onmouseover="this.style.backgroundColor='#c8e6c9'" onmouseout="this.style.backgroundColor='#e8f5e9'">
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Fresh Air</td>
+        <td style="border: 2px solid #4CAF50; padding: 10px;">Reduce vehicle emissions</td>
+      </tr>
+    </table>
+
+    <!-- Reminder Box -->
+    <div style="margin-top: 30px; padding: 20px; background-color: #c8e6c9; border-left: 5px solid #2e7d32; font-size: 18px;">
+      🌱 <strong>Reminder:</strong> When we protect nature, we are securing our own future. Even small actions can make a big difference!
+    </div>
+
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top: 30px;">
+      <button onclick="downloadEssay()" style="background-color: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+        ⬇️ Download Essay as Text
+      </button>
+    </div>
+  </div>
+
+  <!-- Download Script -->
+  <script>
+    function downloadEssay() {
+      const text = document.getElementById("essayText").innerText;
+      const blob = new Blob([text], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "nature_essay.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
